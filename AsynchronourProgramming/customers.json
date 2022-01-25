@@ -1,0 +1,20 @@
+[
+    {
+        "id" : 2,
+        "name" : "steve smith",
+        "age" : 30,
+        "company" : "Australian cricket board"
+    },
+    {
+        "id" : 3,
+        "name" : "kane williamson",
+        "age" : 29,
+        "company" : "Black caps company"
+    },
+    {
+        "id" : 4,
+        "name" : "Joe Root",
+        "age" : 28,
+        "company" : "ECB"
+    }
+]
