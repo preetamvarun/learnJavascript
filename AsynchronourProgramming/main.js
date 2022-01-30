@@ -45,6 +45,7 @@
 //     2 : request received 
 //     3 : processing the request 
 //     4 : request finished and ready to send the response 
+
 //     */
 
 //     // xhr.onreadystatechange = function(){
@@ -151,6 +152,59 @@
 // });
 
 
+// what is a call back function in javascript
 
+// setTimeout(function(){
+//     console.log('Timer');
+// },2000);
+
+// function x(y){
+//     console.log('x');
+//     y();
+// }
+
+// // Here y is the call back function since it is passed as a parameter to another function
+
+// x(function y(){
+//     console.log('y');
+// });
+
+
+// const posts = [
+//     {
+//         title : 'First post',
+//         description : 'This is first post'
+//     },
+//     {
+//         title : 'Second post',
+//         description : 'This is second post'
+//     }
+// ]
+
+
+// function createPost(post,callbackfunction){
+//     setTimeout(function(){
+//         posts.push(post);
+//         // here the call back function is the getPosts function
+//         callbackfunction();
+//     }, 2000)
+// }
+
+// function getPosts(){
+//     setTimeout(function(){
+//         let output = '';
+//         posts.forEach(function(post){
+//             output += `<li>${post.title}</li>`
+//         });
+//         document.body.innerHTML = output;
+//     },1000);
+// }
+
+// const newPost = {
+//     title : 'Third post',
+//     description : 'This is third post'
+// }
+
+// createPost(newPost,getPosts);
 
 
