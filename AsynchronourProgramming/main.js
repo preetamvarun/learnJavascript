@@ -208,6 +208,65 @@
 // createPost(newPost,getPosts);
 
 
+// const x = new Data();
 
 
+// x.fetchData('https://jsonplaceholder.typicode.com/posts',function(error,response){
+//     if(error){
+//         console.log(error + response);
+//     } else{
+//         console.log(response);
+//     }
+// }
+// );
 
+
+// // GET A SINGLE POST (HERE WE ARE GETTING 70th post) 
+
+// x.fetchData('https://jsonplaceholder.typicode.com/posts/70',function(error,response){
+//     if(error){
+//         console.log(error + response);
+//     } else{
+//         console.log(response);
+//     }
+// }
+// );
+
+
+// MAKE A POST REQUEST 
+
+// const newData = {
+//     'title' : 'This is my own title',
+//     'comment' : "This is my own comment"
+// };
+
+
+// x.addNewData('https://jsonplaceholder.typicode.com/posts', newData, function(err,response){
+//     if(err){
+//         console.log(err + response);
+//     } else{
+//         console.log(response);
+//     }
+// });
+
+
+// MAKE A PUT REQUEST 
+
+// x.updateData('https://jsonplaceholder.typicode.com/posts/35', newData, function(err,response){
+//     if(err){
+//         console.log(err + response);
+//     } else{
+//         console.log(response);
+//     }
+// });
+
+
+// MAKE A DELETE REQUEST
+
+// x.deleteData('https://jsonplaceholder.typicode.com/posts/27', function(err,response){
+//     if(err){
+//         console.log(err + response);
+//     } else{
+//         console.log(response);
+//     }
+// })
