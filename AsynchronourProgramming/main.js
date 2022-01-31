@@ -170,6 +170,23 @@
 // });
 
 
+// // call backs are those functions which are passed in as parameters to another functions 
+
+// function assembleAvengers(callback){
+//     setTimeout(function x(){
+//         console.log("Avengers arrived");
+//         callback(); // by doing so avengers will arriver sooner than thanos
+//     }, 2000);
+    
+// }
+
+
+// function y(){
+//     console.log("Thanos arrived");
+// }
+
+// assembleAvengers(y);
+
 // const posts = [
 //     {
 //         title : 'First post',
@@ -270,3 +287,58 @@
 //         console.log(response);
 //     }
 // })
+
+
+// WORK WITH PROMISES 
+
+// let p = new Promise(function(resolve,reject){
+//     let keepYourWord = false;
+//     keepYourWord ? resolve("we will trust you") : reject("we won't trust you");
+// });
+
+// p.then(function(message){
+//     console.log(`you've kept your word. ${message}.`);
+// }).catch(function(message){
+//     console.log(`you didn't keep your word. ${message}.`);
+// });
+
+
+// const posts = [
+//     {title : 'First post',description : 'This is first post'},
+//     {title : 'Second post',description : 'This is second post'}
+// ]
+
+// function createPost(post){
+//     return new Promise(function(resolve,reject){
+//         setTimeout(function(){
+//             posts.push(post);
+//             // let err = true;
+//             let err = false;
+//             err ? reject('Something went wrong') : resolve();
+//         }, 2000)
+//     });
+// }
+
+// function getPosts(){
+//     setTimeout(function(){
+//         let output = '';
+//         posts.forEach(function(post){
+//             output += `<li>${post.title}</li>`
+//         });
+//         document.body.innerHTML = output;
+//     },1000);
+// }
+
+// const newPost = {
+//     title : 'Third post',
+//     description : 'This is third post'
+// }
+
+// createPost(newPost).then(getPosts).catch(function(message){
+//     console.log(message);
+// });
+
+// WORK WITH FETCH API
+
+// FETCH returns a promise 
+
