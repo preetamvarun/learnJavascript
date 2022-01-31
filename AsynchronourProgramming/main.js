@@ -342,3 +342,86 @@
 
 // FETCH returns a promise 
 
+// const textBtn = document.getElementById('text');
+
+// textBtn.addEventListener('click', getTextData);
+
+
+// function getTextData(){
+//     fetch('https://api.github.com/users').then(function(msg){
+//        msg.json().then(function(msg){
+//            console.log(msg)
+//        })
+//     }).catch(function(err){
+//         console.log(err);
+//     })
+// }
+
+// WORK WITH ARROW FUNCTIONS
+
+// Here we are returning 'Hi there!'
+
+// const greet = () => 'Hi there!'
+
+// console.log(greet());
+
+// const x = () => console.log('x is an alphabet');
+
+// x();
+
+
+// const sum = (x,y) => x + y;
+
+// console.log(sum(2,3));
+
+// // For single parameters we don't even need paranthesis
+
+// const multiply = x => x * 10;
+
+// console.log(multiply(10));
+
+
+// const x = () => ({cric : 'vk'})
+
+// console.log(x());
+
+// const arr = [1,2,3,4,5];
+// const names = ['john','smith','williams','rafel','maguire','david warner']
+
+// arr.forEach((a)=>console.log(a));
+
+// const nameLengths = names.map(function(name){
+//     return name.length;
+// });
+
+// const nameLengths = names.map( (name) => name.length );
+
+// const nameLengths = names.map( name =>  name.length );
+
+// console.log(nameLengths);
+
+
+// const textBtn = document.getElementById('text');
+
+// textBtn.addEventListener('click', getTextData);
+
+// function getTextData(){
+//     fetch('https://api.github.com/users').then(function(msg){
+//        msg.json().then(function(msg){
+//            msg.forEach(function(x){
+//                console.log(x.login);
+//            })
+//        })
+//     }).catch(function(err){
+//         console.log(err);
+//     })
+// }
+
+// // REWRITING FETCH USING ARROW FUNCTIONS
+
+// function getTextData(){
+//     fetch('https://api.github.com/users')
+//     .then(msg => msg.json()
+//     .then(msg => msg.forEach(x => console.log(x.login))))
+//     .catch(err => console.log(err))
+// }
