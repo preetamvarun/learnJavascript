@@ -426,3 +426,27 @@
 //     .catch(err => console.log(err))
 // }
 
+// const url = 'https://jsonplaceholder.typicode.com/todos';
+
+// const x = new HTTP();
+
+// const userData = {
+//     "title": "this is my custom title",
+//     "completed": false
+// }
+
+// x.getData(url)
+// .then(todos => todos.forEach(todo => console.log(todo.title)))
+// .catch(err => console.log(err));
+
+// x.postData(url,userData)
+// .then(userData => console.log(userData))
+// .catch(err => console.log(err));
+
+// x.updateData('https://jsonplaceholder.typicode.com/todos/125',userData)
+// .then(userData => console.log(userData))
+// .catch(err => console.log(err));
+
+// x.deleteData('https://jsonplaceholder.typicode.com/todos/123')
+// .then(data => console.log(data))
+// .catch(err => console.log(err));
