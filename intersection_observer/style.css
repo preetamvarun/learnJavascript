@@ -1,0 +1,47 @@
+*,*::before,*::after{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+.second{
+    background-color: yellow;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    height : 100px;
+    width : 100px;
+    transition: all 1s ease;
+    opacity : 0;
+}
+
+.box-1{background-color: red; transform: translateX(100px);}
+.box-2{background-color: blueviolet;transform: translateX(-100px);}
+.box-3{background-color: teal;transform: translateX(100px);}
+.box-4{background-color: springgreen;transform: translateX(100px);}
+/* 
+.appear{
+    transform: translateX(0);
+    opacity : 1;
+}  */
+
+.third{
+    height : 20px;
+    width : 200px;
+    background-color: mediumpurple;
+    margin : 4rem;
+    left : 50%;
+    position: relative;
+    transform: translateX(-250px);
+    transform: rotate(20deg);
+    transition: all .9s ease;
+}
+
+.re-appear{
+    transform: rotate(0deg);
+}
